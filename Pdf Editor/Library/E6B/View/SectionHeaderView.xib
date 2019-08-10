@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zKm-kP-cav" customClass="SectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgY-1D-atj">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONVERSIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr9-hG-dNu">
+                            <rect key="frame" x="71" y="0.0" width="882" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mai-5S-xRW">
+                            <rect key="frame" x="19" y="7" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="7Vw-Q3-gz8"/>
+                                <constraint firstAttribute="width" secondItem="Mai-5S-xRW" secondAttribute="height" multiplier="1:1" id="eKb-xg-SB2"/>
+                                <constraint firstAttribute="height" constant="35" id="gEm-dD-Rzz"/>
+                            </constraints>
+                            <state key="normal" image="expand_icon"/>
+                            <state key="selected" image="collapse_icon"/>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXR-4q-81M">
+                            <rect key="frame" x="800" y="8" width="199" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="CLEAR ALL FIELDS"/>
+                            <connections>
+                                <action selector="actionClearAll:" destination="zKm-kP-cav" eventType="touchUpInside" id="MnT-8e-sCU"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9A-Hb-6de">
+                            <rect key="frame" x="80" y="10" width="199" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="BACK"/>
+                            <connections>
+                                <action selector="actionClearAll:" destination="zKm-kP-cav" eventType="touchUpInside" id="zyX-Ub-TCa"/>
+                                <action selector="backAction:" destination="zKm-kP-cav" eventType="touchUpInside" id="JjE-QR-Ysi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="gr9-hG-dNu" firstAttribute="centerX" secondItem="pgY-1D-atj" secondAttribute="centerX" id="7uF-WF-o5O"/>
+                        <constraint firstItem="Mai-5S-xRW" firstAttribute="top" secondItem="pgY-1D-atj" secondAttribute="top" constant="7" id="9hB-n8-SC0"/>
+                        <constraint firstItem="Mai-5S-xRW" firstAttribute="leading" secondItem="pgY-1D-atj" secondAttribute="leading" constant="19" id="EZZ-AD-ZL4"/>
+                        <constraint firstItem="gr9-hG-dNu" firstAttribute="top" secondItem="pgY-1D-atj" secondAttribute="top" id="ZDD-uf-7v4"/>
+                        <constraint firstItem="gr9-hG-dNu" firstAttribute="centerY" secondItem="pgY-1D-atj" secondAttribute="centerY" id="lF4-nj-gIO"/>
+                        <constraint firstAttribute="bottom" secondItem="gr9-hG-dNu" secondAttribute="bottom" id="mDx-TG-SCD"/>
+                        <constraint firstItem="gr9-hG-dNu" firstAttribute="leading" secondItem="Mai-5S-xRW" secondAttribute="trailing" constant="17" id="t06-ad-qyO"/>
+                        <constraint firstAttribute="trailing" secondItem="gr9-hG-dNu" secondAttribute="trailing" constant="71" id="zxN-SQ-zx8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="pgY-1D-atj" firstAttribute="leading" secondItem="zKm-kP-cav" secondAttribute="leading" id="Ds7-L6-P7P"/>
+                <constraint firstAttribute="trailing" secondItem="pgY-1D-atj" secondAttribute="trailing" id="G85-lv-vUu"/>
+                <constraint firstItem="pgY-1D-atj" firstAttribute="top" secondItem="zKm-kP-cav" secondAttribute="top" id="Tf1-YR-76c"/>
+                <constraint firstAttribute="bottom" secondItem="pgY-1D-atj" secondAttribute="bottom" constant="5" id="dpj-09-gaH"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dropDownButton" destination="Mai-5S-xRW" id="Q66-bF-cMH"/>
+                <outlet property="headerTitleLabel" destination="gr9-hG-dNu" id="tbl-aT-wPD"/>
+                <outlet property="wtBackBtn" destination="S9A-Hb-6de" id="Az9-5t-yZ4"/>
+                <outlet property="wtClearAllBtn" destination="iXR-4q-81M" id="FXZ-a3-g6D"/>
+            </connections>
+            <point key="canvasLocation" x="-639" y="-328"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="collapse_icon" width="40" height="40"/>
+        <image name="expand_icon" width="40" height="40"/>
+    </resources>
+</document>

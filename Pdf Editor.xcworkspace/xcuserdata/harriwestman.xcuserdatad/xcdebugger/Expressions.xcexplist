@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "WBManager.saveItem(item : WBItem, withName : String) -&gt; ():WBManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "+[ILPDFFormButtonField drawWithRect:context:back:selected:radio:]:ILPDFFormButtonField.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.zoomScale">
+            </PersistentString>
+            <PersistentString
+               value = "self.baseFrame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FlightPlanningCell tableView:cellForRowAtIndexPath:]:FlightPlanningCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "planning.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TabSegue.perform() -&gt; ():TabSegue.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "type(of: currentController)">
+            </PersistentString>
+            <PersistentString
+               value = "self.identifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FlightPlanningCell displayDetails:]:FlightPlanningCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "planning.distRem4">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WBTableViewCell.resetWithWBRow(row : WBRow) -&gt; ():WBTableViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static WBRow.row(from : [String : Any]) -&gt; WBRow:WBManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[ILPDFDocument saveDocument:]:ILPDFDocument.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "form.value">
+            </PersistentString>
+            <PersistentString
+               value = "form.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WBRow.dictionary() -&gt; [String : Any]:WBManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[FlightPlanningCell tableView:didSelectRowAtIndexPath:]:FlightPlanningCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FlightPlanningCell getSavedFiles]:FlightPlanningCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "WBItem.data() -&gt; [String : Any]:WBManager.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

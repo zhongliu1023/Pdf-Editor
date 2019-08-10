@@ -1,0 +1,6 @@
+framework module Pods_Pdf_Editor {
+  umbrella header "Pods-Pdf Editor-umbrella.h"
+
+  export *
+  module * { export * }
+}

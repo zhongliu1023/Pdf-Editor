@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManagerSwift (4.0.7)
+  - SwiftCharts (0.4)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SwiftCharts (from `https://github.com/i-schuetz/SwiftCharts.git`)
+
+EXTERNAL SOURCES:
+  SwiftCharts:
+    :git: https://github.com/i-schuetz/SwiftCharts.git
+
+CHECKOUT OPTIONS:
+  SwiftCharts:
+    :commit: 1705b493b9239cbeb74c484eb9fa9694e42e5b7d
+    :git: https://github.com/i-schuetz/SwiftCharts.git
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 58bbcf46b5cf9fd4ed625d28a60cb2fbae4ab0f4
+  SwiftCharts: 84b43d9d70b791459ff5f50ae5a6704326de309d
+
+PODFILE CHECKSUM: 75d087b0b833b27cd03de5f03843f94c2e0857e9
+
+COCOAPODS: 1.1.1

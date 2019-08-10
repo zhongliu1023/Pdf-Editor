@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15G31" minimumToolsVersion="Xcode 7.3">
+    <entity name="Calculations" representedClassName="Calculations" syncable="YES">
+        <attribute name="cloudBasesBases" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cloudBasesDew" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cloudBaseTemp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="daAlt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="daBaro" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="daDa" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="daDew" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="daTemp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="etaKts" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="etaNm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="etaSm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="etaTime" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="freezlingLevelFT" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="freezlingLevelTemp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelBurnFuelBurn" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelBurnFuelUsed" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelBurnTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fuelBurnTimeDec" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelNmGalFuelBurn" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelNmGalGalNm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelNmGalNm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelNmGalNmGal" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelNmGalTimeDec" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="glidingAlt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="glidingDistNM" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="glidingDistSM" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="glidingIas" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="glidingRatio" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="glidingTimeAloft" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isaAlt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isaBaro" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isaDiffCelcius" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isaDiffFeet" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isaTemp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="paAlt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="paBaro" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="paMillibars" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="paPa" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tasalt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tasAs" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tasTas" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeDistanceKts" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeDistanceNm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeDistanceSm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeDistanceTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Conversions" representedClassName="Conversions" syncable="YES">
+        <attribute name="admosBaro" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="admosMillibars" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="admosPsi" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="attribute" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="diatanceNautical" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="distanceFeet" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="distanceKilometer" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="distanceMiles" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fluidGallons" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fluidLiters" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fluidOunces" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fluidPints" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fluidQuarts" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelAvGas" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelJetA" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelOil" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelPounds" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelTks" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelWater" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="speedKph" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="speedKts" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="speedMph" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tempCelcius" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tempfarnate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tempKelbin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeDecimal" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeEnd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStart" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeTotal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeZoneLocal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeZoneLosAngeles" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeZoneZULU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weightKilos" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="weightPound" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="weightTons" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="FlightPlanning" representedClassName="FlightPlanning" syncable="YES">
+        <attribute name="dist1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dist2" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dist3" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dist4" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="distRem1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="distRem2" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="distRem3" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="distRem4" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fuelLoad" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="galHR" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="galRem1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="galRem2" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="galRem3" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="galRem4" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="galUsed1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="galUsed2" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="galUsed3" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="galUsed4" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gs1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gs2" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gs3" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gs4" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalDist" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Performance" representedClassName="Performance" syncable="YES">
+        <attribute name="atLanding" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVa" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVfe" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVg" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVle" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVlo" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVne" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVno" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVr" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVs1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVso" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVx" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLandingVy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="aTLB1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Va" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vfe" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vg" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vle" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vlo" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vne" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vno" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vr" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vs1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vso" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vx" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB1Vy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Va" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vfe" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vg" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vle" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vlo" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vne" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vno" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vr" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vs1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vso" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vx" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atLB2Vy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVa" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVfe" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVg" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVle" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVlo" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVne" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVno" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVr" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVs1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVso" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVx" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="atThisFlightVy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="coloumHigherTakeOFF" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="coloumLandingHigher" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="coloumLandingLower" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="coloumLowerTakeOFF" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="departureUsableLength" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="destinationUsableLength" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVa" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVfe" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVg" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVle" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVlo" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVne" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVno" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVr" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVs1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVso" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVx" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeightVy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVa" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVfe" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVg" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVle" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVlo" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVne" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVno" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVr" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVs1" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVso" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVx" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="grossWeightVy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="landingRunwayReq" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="landingTemp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="landingVrefReq" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lendingWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lengthHigherTakeOFF" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lengthLandingHigher" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lengthLandingLower" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lengthLowerTakeOFF" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="takeOffRunwayReq" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="takeOffTemp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="takeOffVRReq" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="takeOffWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="WeightBalance" syncable="YES">
+        <attribute name="auxTankArm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="auxTankMoment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="auxTankweight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="auxTankWeightGl" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="backPax2Arm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="backPax2Moment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="backPax2Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="backPaxArm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="backPaxMoment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="backPaxWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="basicEmptyArm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="basicEmptyMoment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="basicEmptyWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cargo1Arm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cargo1Moment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cargo1Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cargo2Arm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cargo2Moment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cargo2Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cg2BasicEmptyWeightMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cg2BasicEmptyWeightMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cg2EmptyFuelWeightMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cg2EmptyFuelWeightMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cg2GrossWeightMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cg2GrossWeightMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cg2TakeOffweightMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cg2TakeOffweightMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cgBasicEmptyWeightMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cgBasicEmptyWeightMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cgEmptyFuelWeightMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cgEmptyFuelWeightMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cgGrossWeightMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cgGrossWeightMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cgTakeOffweightMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cgTakeOffWeightMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelArm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelMoment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="emptyFuelWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="frontPax2Arm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="frontPax2Moment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="frontPax2Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="frontPaxArm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="frontPaxMoment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="frontPaxWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mainTanksArm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mainTanksMoment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mainTanksWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mainTanksWeightGl" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="maxCargo1Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="maxCargo2Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="maxEmptyFuelWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="maxGrossWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="maxLandingWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="maxTakeOffWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalArm" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="totalMoment" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="totalWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Calculations" positionX="-54" positionY="144" width="128" height="720"/>
+        <element name="Conversions" positionX="-63" positionY="135" width="128" height="570"/>
+        <element name="FlightPlanning" positionX="-63" positionY="135" width="128" height="465"/>
+        <element name="Performance" positionX="-36" positionY="153" width="128" height="1485"/>
+        <element name="WeightBalance" positionX="-63" positionY="-18" width="128" height="915"/>
+    </elements>
+</model>
