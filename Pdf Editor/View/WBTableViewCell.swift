@@ -36,8 +36,8 @@ class WBTableViewCell: UITableViewCell {
 
         self.row = row
         if self.row.title == "Basic Empty Weight (from Aircraft POH)" {
-            let fontLarge =  [NSFontAttributeName: UIFont.systemFont(ofSize: 14)]
-            let fontSmall =  [NSFontAttributeName: UIFont.systemFont(ofSize: 12)]
+            let fontLarge =  [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)]
+            let fontSmall =  [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12)]
             let attrString1 = NSAttributedString(string: "Basic Empty Weight", attributes: fontLarge)
             let attrString2 = NSAttributedString(string: "(from Aircraft POH)", attributes: fontSmall)
             let attrString = NSMutableAttributedString(attributedString: attrString1)

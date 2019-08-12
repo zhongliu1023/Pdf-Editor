@@ -17,28 +17,30 @@ open class ChartPointsTouchHighlightLayer<T: ChartPoint, U: UIView>: ChartPoints
 
     fileprivate let chartPointLayerModelForScreenLocFilter: ChartPointLayerModelForScreenLocFilter
 
-    open let panGestureRecognizer: UIPanGestureRecognizer
+    public let gestureRecognizer: UIGestureRecognizer
+    
+    open var onCompleteHighlight: (()->Void)?
 
     /// The delay after touches end before the highlighted point fades out. Set to `nil` to keep the highlight until the next touch.
     open var hideDelay: TimeInterval? = 1.0
 
-    weak var chart: Chart?
-
-    public init(xAxis: ChartAxisLayer, yAxis: ChartAxisLayer, innerFrame: CGRect, chartPoints: [T], gestureRecognizer: UIPanGestureRecognizer? = nil, modelFilter: @escaping ChartPointLayerModelForScreenLocFilter, viewGenerator: @escaping ChartPointViewGenerator) {
+    public init(xAxis: ChartAxis, yAxis: ChartAxis, chartPoints: [T], gestureRecognizer: UIGestureRecognizer? = nil, onCompleteHighlight: (()->Void)? = nil, modelFilter: @escaping ChartPointLayerModelForScreenLocFilter, viewGenerator: @escaping ChartPointViewGenerator) {
         chartPointLayerModelForScreenLocFilter = modelFilter
-        panGestureRecognizer = gestureRecognizer ?? UIPanGestureRecognizer()
+        self.gestureRecognizer = gestureRecognizer ?? UILongPressGestureRecognizer()
+        self.onCompleteHighlight = onCompleteHighlight
 
-        super.init(xAxis: xAxis, yAxis: yAxis, innerFrame: innerFrame, chartPoints: chartPoints, viewGenerator: viewGenerator)
+        super.init(xAxis: xAxis, yAxis: yAxis, chartPoints: chartPoints, viewGenerator: viewGenerator)
     }
 
-    override func display(chart: Chart) {
-        let view = UIView(frame: chart.bounds)
+    override open func display(chart: Chart) {
         self.chart = chart
+        
+        let view = UIView(frame: chart.bounds)
 
-        panGestureRecognizer.addTarget(self, action: #selector(handlePan(_:)))
+        gestureRecognizer.addTarget(self, action: #selector(handlePan(_:)))
 
-        if panGestureRecognizer.view == nil {
-            view.addGestureRecognizer(panGestureRecognizer)
+        if gestureRecognizer.view == nil {
+            view.addGestureRecognizer(gestureRecognizer)
         }
 
         chart.addSubview(view)
@@ -50,7 +52,7 @@ open class ChartPointsTouchHighlightLayer<T: ChartPoint, U: UIView>: ChartPoints
             return highlightedModel?.chartPoint
         }
         set {
-            if let index = chartPointsModels.index(where: { $0.chartPoint == newValue }) {
+            if let index = chartPointsModels.firstIndex(where: { $0.chartPoint == newValue }) {
                 highlightedModel = chartPointsModels[index]
             } else {
                 highlightedModel = nil
@@ -72,11 +74,8 @@ open class ChartPointsTouchHighlightLayer<T: ChartPoint, U: UIView>: ChartPoints
         }
     }
 
-    @objc func handlePan(_ gestureRecognizer: UIPanGestureRecognizer) {
+    @objc func handlePan(_ gestureRecognizer: UIGestureRecognizer) {
         switch gestureRecognizer.state {
-        case .possible:
-            // Follow your dreams!
-            break
         case .began, .changed:
             if let view = view {
                 let point = gestureRecognizer.location(in: view)
@@ -88,17 +87,21 @@ open class ChartPointsTouchHighlightLayer<T: ChartPoint, U: UIView>: ChartPoints
                 UIView.animate(withDuration: 0.5,
                     delay: hideDelay,
                     options: [],
-                    animations: { () -> Void in
+                    animations: {
                         for subview in view.subviews {
                             subview.alpha = 0
                         }
-                    }, completion: { (completed) -> Void in
+                    }, completion: {completed in
                         if completed {
                             self.highlightedModel = nil
+                            self.onCompleteHighlight?()
                         }
                     }
                 )
             }
+        case .possible: fallthrough
+        @unknown default:
+            break
         }
     }
 }

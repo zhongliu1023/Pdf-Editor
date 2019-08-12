@@ -1,10 +1,14 @@
 PODS:
-  - IQKeyboardManagerSwift (4.0.7)
-  - SwiftCharts (0.4)
+  - IQKeyboardManagerSwift (6.4.1)
+  - SwiftCharts (0.6.5)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
   - SwiftCharts (from `https://github.com/i-schuetz/SwiftCharts.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IQKeyboardManagerSwift
 
 EXTERNAL SOURCES:
   SwiftCharts:
@@ -12,13 +16,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftCharts:
-    :commit: 1705b493b9239cbeb74c484eb9fa9694e42e5b7d
+    :commit: 4328059eced53bb8d07f57b25bf5288d4f44f842
     :git: https://github.com/i-schuetz/SwiftCharts.git
 
 SPEC CHECKSUMS:
-  IQKeyboardManagerSwift: 58bbcf46b5cf9fd4ed625d28a60cb2fbae4ab0f4
-  SwiftCharts: 84b43d9d70b791459ff5f50ae5a6704326de309d
+  IQKeyboardManagerSwift: d2df660d0b8d64a15cb2537c9ff303213fa515b2
+  SwiftCharts: 761c64373b11985ee8b6195b521c319aede0a9fc
 
 PODFILE CHECKSUM: 75d087b0b833b27cd03de5f03843f94c2e0857e9
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.7.5

@@ -16,21 +16,21 @@ open class ChartPointsTrackerLayer<T: ChartPoint>: ChartPointsLayer<T> {
     fileprivate let lineColor: UIColor
     fileprivate let lineWidth: CGFloat
     
-    fileprivate lazy var currentPositionLineOverlay: UIView = {
+    fileprivate lazy private(set) var currentPositionLineOverlay: UIView = {
         let currentPositionLineOverlay = UIView()
         currentPositionLineOverlay.backgroundColor = self.lineColor
         return currentPositionLineOverlay
     }()
     
     
-    public init(xAxis: ChartAxisLayer, yAxis: ChartAxisLayer, innerFrame: CGRect, chartPoints: [T], locChangedFunc: @escaping (CGPoint) -> (), lineColor: UIColor = UIColor.black, lineWidth: CGFloat = 1) {
+    public init(xAxis: ChartAxis, yAxis: ChartAxis, chartPoints: [T], locChangedFunc: @escaping (CGPoint) -> (), lineColor: UIColor = UIColor.black, lineWidth: CGFloat = 1) {
         self.locChangedFunc = locChangedFunc
         self.lineColor = lineColor
         self.lineWidth = lineWidth
-        super.init(xAxis: xAxis, yAxis: yAxis, innerFrame: innerFrame, chartPoints: chartPoints)
+        super.init(xAxis: xAxis, yAxis: yAxis, chartPoints: chartPoints)
     }
     
-    override func display(chart: Chart) {
+    open override func display(chart: Chart) {
         let view = TrackerView(frame: chart.bounds, updateFunc: {[weak self] location in
             self?.locChangedFunc(location)
             self?.currentPositionLineOverlay.center.x = location.x
@@ -39,8 +39,9 @@ open class ChartPointsTrackerLayer<T: ChartPoint>: ChartPointsLayer<T> {
         chart.addSubview(view)
         self.view = view
         
-        view.addSubview(self.currentPositionLineOverlay)
-        self.currentPositionLineOverlay.frame = CGRect(x: self.innerFrame.origin.x + 200 - self.lineWidth / 2, y: self.innerFrame.origin.y, width: self.lineWidth, height: self.innerFrame.height)
+        view.addSubview(currentPositionLineOverlay)
+        
+        currentPositionLineOverlay.frame = CGRect(x: chart.containerFrame.origin.x + 200 - lineWidth / 2, y: modelLocToScreenLoc(y: yAxis.last), width: lineWidth, height: modelLocToScreenLoc(y: yAxis.first))
     }
 }
 

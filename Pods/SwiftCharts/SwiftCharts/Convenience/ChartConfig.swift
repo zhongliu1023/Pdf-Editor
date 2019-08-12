@@ -12,8 +12,8 @@
 import UIKit
 
 open class ChartConfig {
-    open let chartSettings: ChartSettings
-    open let guidelinesConfig: GuidelinesConfig? // nil means no guidelines
+    public let chartSettings: ChartSettings
+    public let guidelinesConfig: GuidelinesConfig? // nil means no guidelines
     
     public init(chartSettings: ChartSettings, guidelinesConfig: GuidelinesConfig?) {
         self.chartSettings = chartSettings
@@ -23,10 +23,10 @@ open class ChartConfig {
 
 
 open class ChartConfigXY: ChartConfig {
-    open let xAxisConfig: ChartAxisConfig
-    open let yAxisConfig: ChartAxisConfig
-    open let xAxisLabelSettings: ChartLabelSettings
-    open let yAxisLabelSettings: ChartLabelSettings
+    public let xAxisConfig: ChartAxisConfig
+    public let yAxisConfig: ChartAxisConfig
+    public let xAxisLabelSettings: ChartLabelSettings
+    public let yAxisLabelSettings: ChartLabelSettings
 
     public init(chartSettings: ChartSettings = ChartSettings(), xAxisConfig: ChartAxisConfig, yAxisConfig: ChartAxisConfig, xAxisLabelSettings: ChartLabelSettings = ChartLabelSettings(), yAxisLabelSettings: ChartLabelSettings = ChartLabelSettings(), guidelinesConfig: GuidelinesConfig? = GuidelinesConfig()) {
         self.xAxisConfig = xAxisConfig
@@ -65,22 +65,22 @@ public struct GuidelinesConfig {
 // Helper to generate default guidelines layer for GuidelinesConfig
 public struct GuidelinesDefaultLayerGenerator {
 
-    public static func generateOpt(xAxis: ChartAxisLayer, yAxis: ChartAxisLayer, chartInnerFrame: CGRect, guidelinesConfig: GuidelinesConfig?) -> ChartLayer? {
+    public static func generateOpt(xAxisLayer: ChartAxisLayer, yAxisLayer: ChartAxisLayer, guidelinesConfig: GuidelinesConfig?) -> ChartLayer? {
         if let guidelinesConfig = guidelinesConfig {
-            return self.generate(xAxis: xAxis, yAxis: yAxis, chartInnerFrame: chartInnerFrame, guidelinesConfig: guidelinesConfig)
+            return generate(xAxisLayer: xAxisLayer, yAxisLayer: yAxisLayer, guidelinesConfig: guidelinesConfig)
         } else {
             return nil
         }
     }
     
-    public static func generate(xAxis: ChartAxisLayer, yAxis: ChartAxisLayer, chartInnerFrame: CGRect, guidelinesConfig: GuidelinesConfig) -> ChartLayer {
+    public static func generate(xAxisLayer: ChartAxisLayer, yAxisLayer: ChartAxisLayer, guidelinesConfig: GuidelinesConfig) -> ChartLayer {
         if guidelinesConfig.dotted {
             let settings = ChartGuideLinesDottedLayerSettings(linesColor: guidelinesConfig.lineColor, linesWidth: guidelinesConfig.lineWidth)
-            return ChartGuideLinesDottedLayer(xAxis: xAxis, yAxis: yAxis, innerFrame: chartInnerFrame, settings: settings)
+            return ChartGuideLinesDottedLayer(xAxisLayer: xAxisLayer, yAxisLayer: yAxisLayer, settings: settings)
             
         } else {
             let settings = ChartGuideLinesDottedLayerSettings(linesColor: guidelinesConfig.lineColor, linesWidth: guidelinesConfig.lineWidth)
-            return ChartGuideLinesDottedLayer(xAxis: xAxis, yAxis: yAxis, innerFrame: chartInnerFrame, settings: settings)
+            return ChartGuideLinesDottedLayer(xAxisLayer: xAxisLayer, yAxisLayer: yAxisLayer, settings: settings)
         }
     }
 }

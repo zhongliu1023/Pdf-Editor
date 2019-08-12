@@ -53,7 +53,7 @@ class WBViewController: UIViewController {
     // Do any additional setup after loading the view.
     }
     
-    func hideDropDownList() {
+    @objc func hideDropDownList() {
         self.tblFormList.isHidden = true
         self.txtFormName.resignFirstResponder()
         self.view.endEditing(true)
@@ -276,7 +276,7 @@ extension WBViewController { // Chart View
     }
 
     func settings() -> ChartSettings {
-        let chartSettings = ChartSettings()
+        var chartSettings = ChartSettings()
         chartSettings.leading = 20
         chartSettings.top = 20
         chartSettings.trailing = 20

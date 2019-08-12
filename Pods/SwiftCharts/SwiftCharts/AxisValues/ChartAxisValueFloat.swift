@@ -8,13 +8,13 @@
 
 import UIKit
 
-@available(*, deprecated: 0.2.5, message: "use ChartAxisValueDouble instead")
+@available(*, deprecated, message: "use ChartAxisValueDouble instead")
 open class ChartAxisValueFloat: ChartAxisValue {
     
-    open let formatter: NumberFormatter
+    public let formatter: NumberFormatter
 
     open var float: CGFloat {
-        return CGFloat(self.scalar)
+        return CGFloat(scalar)
     }
 
     public init(_ float: CGFloat, formatter: NumberFormatter = ChartAxisValueFloat.defaultFormatter, labelSettings: ChartLabelSettings = ChartLabelSettings()) {
@@ -23,10 +23,10 @@ open class ChartAxisValueFloat: ChartAxisValue {
     }
    
     override open func copy(_ scalar: Double) -> ChartAxisValueFloat {
-        return ChartAxisValueFloat(CGFloat(scalar), formatter: self.formatter, labelSettings: self.labelSettings)
+        return ChartAxisValueFloat(CGFloat(scalar), formatter: formatter, labelSettings: labelSettings)
     }
     
-    static var defaultFormatter: NumberFormatter = {
+    public static var defaultFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.maximumFractionDigits = 2
         return formatter
@@ -35,6 +35,6 @@ open class ChartAxisValueFloat: ChartAxisValue {
     // MARK: CustomStringConvertible
 
     override open var description: String {
-        return self.formatter.string(from: NSNumber(value: self.float.native))!
+        return formatter.string(from: NSNumber(value: Float(float)))!
     }
 }

@@ -113,7 +113,7 @@ class PdfEditViewController: ILPDFViewController {
 }
 
 extension PdfEditViewController: EPSignatureDelegate { //SIGNATURE_REQUESTED
-    func signatureRequested(notification: Notification) {
+    @objc func signatureRequested(notification: Notification) {
         if let signatureField = notification.object as? ILPDFFormSignatureField {
             self.signatureField = signatureField
             
@@ -149,7 +149,7 @@ extension PdfEditViewController {
         self.document = savedVCDocument
     }
     
-    func onShare(_ sender: Any) {
+    @objc func onShare(_ sender: Any) {
         let data = self.document!.documentData as Data
         var name = self.pdfItem.name + ".pdf"
         if self.pdfItem.customerName != nil {
